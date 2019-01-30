@@ -1,0 +1,24 @@
+{
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module",
+        "allowImportExportEverywhere": false,
+        "codeFrame": false
+    },
+    "rules": {
+        "linebreak-style": 0,
+        "global-require": 0,
+        "eslint linebreak-style": [
+            0,
+            "error",
+            "windows"
+        ],
+        "no-use-before-define": "off",
+        "no-console": "off",
+        "keyword-spacing": "off",
+        "react/jsx-filename-extension": "off",
+        "react/jsx-wrap-multilines": "off",
+        "react/forbid-prop-types": "off"
+    }
+}

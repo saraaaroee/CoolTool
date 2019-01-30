@@ -1,0 +1,84 @@
+@import '../../style/colours.scss';
+
+.formContainer {
+  width: 300px; 
+  height: fit-content; 
+  display: flex; 
+  position: fixed; 
+  bottom: 20px;
+  left: 20px; 
+  z-index: 100;
+  padding: 30px;
+  background-color: $black;
+
+  form {
+    width: 100%;
+
+    input {
+      width: 100%;
+      margin-top: 15px;
+      padding: 10px 0px;
+      border-style: none;
+      border-bottom: 1px solid $lightGrey;
+      background-color: transparent;
+      font-size: 10px;
+      color: $white;
+      font-family: 'Raleway', sans-serif; 
+      font-weight: 300;
+      letter-spacing: 1px;
+
+      &:focus {
+        outline: 0;
+        border-bottom: 1px solid $prettyPink;
+      }
+    }
+
+    textarea {
+      @extend input;
+      height: 80px;
+    }
+
+    ::placeholder { 
+      color: $lightGrey;
+      font-size: 10px;
+      font-family: 'Raleway', sans-serif; 
+      font-weight: 300;
+      font-style: italic;
+      letter-spacing: 1px;
+    }
+
+    .addBtn {
+      display: flex; 
+      width: fit-content;
+      margin-top: 30px;
+      padding: 10px 40px;	
+      border-radius: 2px;	
+      border: none;
+      background-color: $darkerPrettyPink;
+      text-align: center;
+      transition: 0.3s;
+      cursor: pointer;
+
+      p {
+        color: $white;
+        letter-spacing: 1px;
+      } 
+    
+      &:hover {
+        background-color: $prettyPink;
+        transform: scale(1.03);
+        
+      }
+
+      &:focus {
+        background-color: $darkerPrettyPink;
+        outline: none;
+      }
+    
+      p {
+        margin: 0px;
+      }
+    }
+  }
+}
+
